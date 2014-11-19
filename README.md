@@ -1,6 +1,6 @@
 # Simple DOM
 
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/3aa237f1-a5d5-4d9b-8ba5-9059d893617a/mini.png)](https://insight.sensiolabs.com/projects/3aa237f1-a5d5-4d9b-8ba5-9059d893617a) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wpillar/simple-dom/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wpillar/simple-dom/?branch=master)
+[![Build Status](https://travis-ci.org/wpillar/simple-dom.svg?branch=master)](https://travis-ci.org/wpillar/simple-dom) [![SensioLabsInsight](https://insight.sensiolabs.com/projects/3aa237f1-a5d5-4d9b-8ba5-9059d893617a/mini.png)](https://insight.sensiolabs.com/projects/3aa237f1-a5d5-4d9b-8ba5-9059d893617a) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/wpillar/simple-dom/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/wpillar/simple-dom/?branch=master)
 
 A wrapper for PHP's DOMElement class that provides a nicer API for retrieving data from an element.
 
