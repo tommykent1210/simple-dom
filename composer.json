@@ -1,7 +1,10 @@
 {
     "name": "wpillar/simple-dom",
-    "description": "PHP wrapper for DOMDocument.",
+    "description": "PHP wrapper for DOMElement.",
     "license": "MIT",
+    "keywords": ["xml", "html", "dom", "domelement", "simple-dom"],
+    "homepage": "https://github.com/wpillar/simple-dom",
+    "type": "library",
     "autoload": {
         "psr-4": {
             "Pillar\\SimpleDom\\": ["./src"]
