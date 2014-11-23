@@ -82,6 +82,32 @@ class Element
     }
 
     /**
+     * (PHP 5 &gt;= 5.0.0)<br/>
+     * Retrieve an external iterator
+     * @link http://php.net/manual/en/iteratoraggregate.getiterator.php
+     * @return Traversable An instance of an object implementing <b>Iterator</b> or
+     * <b>Traversable</b>
+     */
+    public function getIterator()
+    {
+        $elements = [];
+
+        foreach ($this->getDOMElement()->childNodes as $key => $domElement) {
+            $elements[$domElement->tagName] = new static($domElement);
+        }
+
+        return new \ArrayIterator($elements);
+    }
+
+    /**
+     * @return string
+     */
+    public function asXml()
+    {
+        return $this->getDOMElement()->ownerDocument->saveXML($this->getDOMElement());
+    }
+
+    /**
      * @param $xmlString
      * @return Element
      */
