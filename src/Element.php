@@ -72,6 +72,45 @@ class Element
 
         return $values;
     }
+    
+        /**
+     * @param $name
+     * @param $attributeName
+     * @return string
+     */
+    public function getAttribute($name, $attributeName) {
+        $nodeList = $this->element->getElementsByTagName($name);
+        $element = $nodeList->item(0);
+        if ($element->hasAttribute($attributeName)) {
+            return $element->getAttribute($attributeName); 
+        } else {
+            return null;
+        }
+    }
+    
+    /**
+     * @param $name
+     * @param $attributeName
+     * @param $preserveStructure = true
+     * @return array
+     */
+    public function getAttributes($name, $attributeName, $preserveStructure = true) {
+        $nodeList = $this->element->getElementsByTagName($name);
+        $values = [];
+
+        foreach ($nodeList as $element) {
+            if ($element->hasAttribute($attributeName)) {
+                $values[] = $element->getAttribute($attributeName); 
+            } else {
+                if($preserveStructure) { 
+                    $values[] = null;    
+                } else {
+                    continue;
+                }
+            }
+        }
+        return $values;
+    }
 
     /**
      * @return DOMElement
