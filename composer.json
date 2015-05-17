@@ -1,9 +1,9 @@
 {
-    "name": "wpillar/simple-dom",
+    "name": "tommykent1210/simple-dom",
     "description": "PHP wrapper for DOMElement.",
     "license": "MIT",
     "keywords": ["xml", "html", "dom", "domelement", "simple-dom"],
-    "homepage": "https://github.com/wpillar/simple-dom",
+    "homepage": "https://github.com/tommykent1210/simple-dom",
     "type": "library",
     "autoload": {
         "psr-4": {
