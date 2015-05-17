@@ -161,9 +161,10 @@ class Element
      * @param $htmlString
      * @return Element
      */
-    public static function html($htmlString)
+    public static function html($htmlString, $validate = true)
     {
         $doc = new DOMDocument();
+        $doc->validateOnParse = $validate;
         $doc->loadHTML($htmlString);
         return new static($doc->documentElement);
     }
